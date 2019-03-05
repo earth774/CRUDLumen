@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "58d5a4d4-145c-45bf-bd29-9ab972d38ca6",
+		"name": "CRUDLumen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8888/CRUDLumen/public/api/v1/getAll"
+			},
+			"response": []
+		},
+		{
+			"name": "getID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8888/CRUDLumen/public/api/v1/getID/3"
+			},
+			"response": []
+		},
+		{
+			"name": "insertData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sutthipong nuanma\"\n}"
+				},
+				"url": "http://localhost:8888/CRUDLumen/public/api/v1/insertData"
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sutthipong nuanma\"\n}"
+				},
+				"url": "http://localhost:8888/CRUDLumen/public/api/v1/updateData/2"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8888/CRUDLumen/public/api/v1/deleteData/2"
+			},
+			"response": []
+		}
+	]
+}
