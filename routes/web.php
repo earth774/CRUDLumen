@@ -16,7 +16,6 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api/v1'], function () use ($router) {
-
     $router->get('getAll', 'CRUDController@getAllData');
     $router->get('getID/{id}', 'CRUDController@getData');
     $router->post('insertData', 'CRUDController@insertData');
